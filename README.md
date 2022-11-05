@@ -1,13 +1,16 @@
-# Sample Hardhat Project
+# Fund Contract with Solidity and Javascript
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+FundMe, is a solidity program which is able to get funds from other users onto the contract and withdraw them
+The deployments are done with javascript, and we implemented a Mock for running tests on the local hardhat network or a localhost.
+I used the testnet goerli for this project and this is my first Smart Contract program, as well as my first repo on github!
 
 Try running some of the following tasks:
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+yarn test (hardhat network)
+yarn test --network goerli (goerli network, check etherscan)
+
+yarn hardhat node (localhost)
+yarn hardhat run scripts/fund.js
+yarn hardhat run scripts/withdraw.js
 ```
